@@ -2,14 +2,19 @@
 @{
     Layout = "_Layout";
 }
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+
 <h2 class="text-center">This is where you can input stories of your choosing</h2>
 <div class="panel panel-success">
     <div class="panel-heading text-left"><h4>Enter your stories below</h4></div>
     <div class="panel-body">
         <form class="p-4" asp-controller="HomeController" asp-action="StoryPost" asp-antiforgery="true" method="post">
-            <div asp-validation-summary="All"></div>
+            <div asp-validation-summary="ModelOnly" style="background-color: red"></div>
             <div class="form-group">
                 <label asp-for="Title">Title:</label>
+                <span asp-validation-for="Title"></span>
                 <input class="form-control" asp-for="Title" />
             </div>
             <div class="form-group">
@@ -22,7 +27,7 @@
         </form>
     </div>
     <div class="text-center">
-        If you want to see others stories, click <a class="nav-link"  asp-action="StoryBoard">here</a>
+        If you want to see others stories, click <a class="nav-link" asp-action="StoryBoard">here</a>
         to go to that page.
     </div>
 </div>
