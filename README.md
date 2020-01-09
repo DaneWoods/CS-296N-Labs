@@ -1,1 +1,1 @@
-# CS296N Lab1
+# CS296N Lab1-Authentication
