@@ -1,2 +1,1 @@
-# CS295N-Lab4
-# CS-296N-Labs
+# CS296N Labs
