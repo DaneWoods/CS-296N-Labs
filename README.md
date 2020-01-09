@@ -1,1 +1,1 @@
-# CS296N Labs
+# CS296N Lab1
