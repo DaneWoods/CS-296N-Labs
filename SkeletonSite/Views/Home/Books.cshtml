@@ -1,0 +1,16 @@
+﻿@model IEnumerable<SkeletonSite.Models.BookDetails>
+@{
+    Layout = "_TableLayout";
+    ViewBag.Title = "Books";
+    ViewBag.Heading = "Books and print media within the table";
+    ViewBag.Header = "Books from: ";
+}
+@foreach (SkeletonSite.Models.BookDetails b in Model)
+{
+    <tr>
+        <td>
+            Author: @(ViewBag.Author = b.Author)<br />
+            Title: @b.Title
+        </td>
+    </tr>
+}

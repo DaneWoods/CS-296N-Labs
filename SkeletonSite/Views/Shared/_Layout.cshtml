@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>@ViewData["Title"] - Fan Site</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                @if (ViewData["Title"].ToString() == "Home")
+                {
+                    <li><a asp-action="Index">Home</a></li>
+                    <li><a asp-action="History">History</a></li>
+                    <li><a asp-action="StoryPost">StoryPost</a></li>
+                    <li><a asp-action="Sources">Sources</a></li>
+                    <li><a asp-action="Books">Books</a></li>
+                    <li><a asp-action="Links">Links</a></li>
+                }
+                @if (ViewData["Title"].ToString() == "History")
+                {
+                    <li><a asp-action="Index">Home</a></li>
+                    <li class="active"><a asp-action="History">History</a></li>
+                    <li><a asp-action="StoryPost">StoryPost</a></li>
+                    <li><a asp-action="Sources">Sources</a></li>
+                    <li><a asp-action="Books">Books</a></li>
+                    <li><a asp-action="Links">Links</a></li>
+                }
+                @if (ViewData["Title"].ToString() == "StoryPost")
+                {
+                    <li><a asp-action="Index">Home</a></li>
+                    <li><a asp-action="History">History</a></li>
+                    <li class="active"><a asp-action="StoryPost">StoryPost</a></li>
+                    <li><a asp-action="Sources">Sources</a></li>
+                    <li><a asp-action="Books">Books</a></li>
+                    <li><a asp-action="Links">Links</a></li>
+                }
+                @if (ViewData["Title"].ToString() == "Sources")
+                {
+                    <li><a asp-action="Index">Home</a></li>
+                    <li><a asp-action="History">History</a></li>
+                    <li><a asp-action="StoryPost">StoryPost</a></li>
+                    <li class="active"><a asp-action="Sources">Sources</a></li>
+                    <li><a asp-action="Books">Books</a></li>
+                    <li><a asp-action="Links">Links</a></li>
+                }
+                @if (ViewData["Title"].ToString() != "Links" && ViewData["Title"].ToString() != "Books" &&
+                   ViewData["Title"].ToString() != "Sources" && ViewData["Title"].ToString() != "StoryPost" &&
+                   ViewData["Title"].ToString() != "History" && ViewData["Title"].ToString() != "Home")
+                {
+                    <li><a asp-action="Index">Home</a></li>
+                    <li><a asp-action="History">History</a></li>
+                    <li><a asp-action="StoryPost">StoryPost</a></li>
+                    <li><a asp-action="Sources">Sources</a></li>
+                    <li><a asp-action="Books">Books</a></li>
+                    <li><a asp-action="Links">Links</a></li>
+                }
+            </ul>
+        </div>
+    </nav>
+    @RenderBody()
+</body>
+</html>

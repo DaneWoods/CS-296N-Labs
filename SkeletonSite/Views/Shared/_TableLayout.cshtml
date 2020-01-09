@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>@ViewBag.Title - Fan Site</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                @if (ViewBag.Title == "Books")
+                {
+                    <li><a asp-action="Index">Home</a></li>
+                    <li><a asp-action="History">History</a></li>
+                    <li><a asp-action="StoryPost">StoryPost</a></li>
+                    <li><a asp-action="Sources">Sources</a></li>
+                    <li class="active"><a asp-action="Books">Books</a></li>
+                    <li><a asp-action="Links">Links</a></li>
+                }
+                @if (ViewBag.Title == "Links")
+                {
+                    <li><a asp-action="Index">Home</a></li>
+                    <li><a asp-action="History">History</a></li>
+                    <li><a asp-action="StoryPost">StoryPost</a></li>
+                    <li><a asp-action="Sources">Sources</a></li>
+                    <li><a asp-action="Books">Books</a></li>
+                    <li class="active"><a asp-action="Links">Links</a></li>
+                }
+            </ul>
+        </div>
+    </nav>
+    <h2 class="text-center">@ViewBag.Heading</h2>
+    <div class="panel-body">
+        <table class="table table-md text-md-left table-bordered">
+            <thead>
+                
+                <tr>
+                    <th>
+                        @ViewBag.Header 
+                        @if (ViewBag.Title == "Books")
+                        {
+                            @ViewBag.Author
+                        }
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @RenderBody()
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

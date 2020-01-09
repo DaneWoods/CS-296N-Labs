@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SkeletonSite.Models.Story>
+@{
+    Layout = "_Layout";
+}
+<h2 class="text-center">This is all of the current stories that have been posted</h2>
+<div class="panel-body">
+    <table class="table table-md text-md-left table-bordered">
+        <thead>
+            <tr>
+                <th>Posted Stories</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (SkeletonSite.Models.Story s in Model)
+            {
+                <tr>
+                    <td>
+                        Title: @(ViewBag.Story = s.Title)
+                        <br />
+                        @s.Text
+                    </td>
+                </tr>
+                @foreach (Comment com in s.Subjects)
+                {
+                    <tr>
+                        <td>
+                            Subject: @com.Text
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td>
+                        <a class="btn btn-primary" asp-action="Comment" asp-route-storyTitle="@s.Title">Comment</a>
+                    </td>
+                </tr>
+                    
+            }
+            </tbody>
+    </table>
+</div>

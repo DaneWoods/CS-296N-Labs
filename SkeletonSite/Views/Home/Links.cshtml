@@ -1,0 +1,15 @@
+﻿@model IEnumerable<SkeletonSite.Models.Link>
+@{
+    Layout = "_TableLayout";
+    ViewBag.Title = "Links";
+    ViewBag.Heading = "Links to online media Below";
+    ViewBag.Header = "Links to wikipedia giving info about Stephen Hawking.";
+}
+@foreach (SkeletonSite.Models.Link l in Model)
+{
+    <tr>
+        <td>
+            URL: <a href="@l.Url">@l.Url</a>
+        </td>
+    </tr>
+}
