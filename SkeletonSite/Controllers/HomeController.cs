@@ -78,12 +78,13 @@ namespace SkeletonSite.Controllers
         }
 
         [HttpPost]
-        public IActionResult Comment(string subject, string storyTitle)
+        public IActionResult Comment(string subject, string storyTitle, string rating)
         {
             ViewBag.Story = storyTitle;
             ViewData["Title"] = "Comment";
             Comment com = new Comment();
             com.Text = subject;
+            com.Rating = int.Parse(rating);
             repo.AddComment(com, storyTitle);
             return RedirectToAction("StoryBoard");
         }
