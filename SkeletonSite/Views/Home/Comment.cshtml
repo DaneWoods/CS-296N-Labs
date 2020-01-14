@@ -1,4 +1,4 @@
-﻿@model String
+﻿@model SkeletonSite.Models.Comment
 @{
     Layout = "_Layout";
 }
@@ -10,13 +10,17 @@
     <div class="panel-heading"><h4>Below here you can type a comment to a story</h4></div>
     <div class="panel-body">
         <div><h2>You are writing a comment for: @ViewBag.Story</h2></div>
-        <form class="p-4" method="post">
+        <form class="p-4" asp-controller="Home" asp-action="Comment" asp-antiforgery="true" method="post">
+            <div asp-validation-summary="ModelOnly" style="background-color: red"></div>
             <div>
                 <div class="form-group">
-                    <label>Subject:</label>
-                    <input class="form-control" name="subject" />
-                    <label>Rating:</label>
-                    <input class="form-control" name="rating" />/10
+                    <input type="hidden" value="@ViewBag.Story" name="storyTitle" />
+                    <label asp-for="Text">Subject:</label>
+                    <span asp-validation-for="Text"></span>
+                    <input class="form-control" asp-for="Text" />
+                    <label asp-for="Rating">Rating:</label>
+                    <span asp-validation-for="Rating"></span>
+                    <input class="form-control" asp-for="Rating" style=" float: left" />/10
                     <div class="text-md-left">
                         <button class="btn btn-primary" type="submit">Submit comment</button>
                     </div>

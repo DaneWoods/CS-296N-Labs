@@ -74,19 +74,22 @@ namespace SkeletonSite.Controllers
         {
             ViewData["Title"] = "Comment";
             ViewBag.Story = storyTitle;
-            return View("Comment", storyTitle);
+            return View("Comment");
         }
 
         [HttpPost]
-        public IActionResult Comment(string subject, string storyTitle, string rating)
+        public IActionResult Comment(Comment com, string storyTitle)
         {
-            ViewBag.Story = storyTitle;
             ViewData["Title"] = "Comment";
-            Comment com = new Comment();
-            com.Text = subject;
-            com.Rating = int.Parse(rating);
-            repo.AddComment(com, storyTitle);
-            return RedirectToAction("StoryBoard");
+            if (ModelState.IsValid)
+            {
+                repo.AddComment(com, storyTitle);
+                return RedirectToAction("StoryBoard");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public ViewResult Books()

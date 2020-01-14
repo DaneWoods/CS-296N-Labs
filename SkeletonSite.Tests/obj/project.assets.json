@@ -10583,23 +10583,26 @@
   },
   "packageFolders": {
     "C:\\Users\\Student\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student\\Desktop\\CS-296N-Labs\\SkeletonSite.Tests\\SkeletonSite.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Student\\Desktop\\CS296N-Labs\\SkeletonSite.Tests\\SkeletonSite.Tests.csproj",
       "projectName": "SkeletonSite.Tests",
-      "projectPath": "C:\\Users\\Student\\Desktop\\CS-296N-Labs\\SkeletonSite.Tests\\SkeletonSite.Tests.csproj",
+      "projectPath": "C:\\Users\\Student\\Desktop\\CS296N-Labs\\SkeletonSite.Tests\\SkeletonSite.Tests.csproj",
       "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student\\Desktop\\CS-296N-Labs\\SkeletonSite.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Student\\Desktop\\CS296N-Labs\\SkeletonSite.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -10611,8 +10614,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Student\\Desktop\\CS-296N-Labs\\SkeletonSite\\SkeletonSite.csproj": {
-              "projectPath": "C:\\Users\\Student\\Desktop\\CS-296N-Labs\\SkeletonSite\\SkeletonSite.csproj"
+            "C:\\Users\\Student\\Desktop\\CS296N-Labs\\SkeletonSite\\SkeletonSite.csproj": {
+              "projectPath": "C:\\Users\\Student\\Desktop\\CS296N-Labs\\SkeletonSite\\SkeletonSite.csproj"
             }
           }
         }
