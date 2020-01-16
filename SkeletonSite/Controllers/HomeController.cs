@@ -92,6 +92,28 @@ namespace SkeletonSite.Controllers
             }
         }
 
+        [HttpGet]
+        public IActionResult UserCreate()
+        {
+            ViewData["Title"] = "UserCreate";
+            return View("UserCreate");
+        }
+
+        [HttpPost]
+        public IActionResult UserCreate(User use)
+        {
+            ViewData["Title"] = "UserCreate";
+            if (ModelState.IsValid)
+            {
+                repo.AddUser(use);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
+        }
+
         public ViewResult Books()
         {
             return View(BookCollection.Library);

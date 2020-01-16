@@ -11,6 +11,7 @@ namespace SkeletonSite.Repositories
         List<Story> Stories{ get; }
         void AddStory(Story story);
         void AddComment(Comment com, string title);
+        void AddUser(User use);
         Story Retrieve(string title);
     }
 }

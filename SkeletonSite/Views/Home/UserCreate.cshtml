@@ -1,0 +1,30 @@
+﻿@model SkeletonSite.Models.User
+@{
+    Layout = "_Layout";
+}
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+
+<h2 class="text-center">Create an account, Input not example data not real account info for something you have.</h2>
+<div class="panel panel-success">
+    <div class="panel-heading text-left"><h4>Enter info below</h4></div>
+    <div class="panel-body">
+        <form class="p-4" asp-controller="Home" asp-action="UserCreate" asp-antiforgery="true" method="post">
+            <div asp-validation-summary="ModelOnly" style="background-color: red"></div>
+            <div class="form-group">
+                <label asp-for="UserName">UserName:</label>
+                <span asp-validation-for="UserName"></span>
+                <input class="form-control" asp-for="UserName" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Email:</label>
+                <span asp-validation-for="Email"></span>
+                <input class="form-control" asp-for="Email" />
+            </div>
+            <div class="text-md-left">
+                <button class="btn btn-primary" type="submit">Create Account</button>
+            </div>
+        </form>
+    </div>
+</div>

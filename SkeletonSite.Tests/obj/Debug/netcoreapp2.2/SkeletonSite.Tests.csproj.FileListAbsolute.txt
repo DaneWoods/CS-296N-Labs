@@ -55,3 +55,22 @@ C:\Users\Administrator\Desktop\Lab5 Dane Woods\SkeletonSite.Tests\obj\Debug\netc
 C:\Users\Administrator\Desktop\Lab5 Dane Woods\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.csproj.CopyComplete
 C:\Users\Administrator\Desktop\Lab5 Dane Woods\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.dll
 C:\Users\Administrator\Desktop\Lab5 Dane Woods\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.pdb
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\SkeletonSite.Views.dll
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\SkeletonSite.Views.pdb
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\SkeletonSite.Tests.deps.json
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\SkeletonSite.Tests.runtimeconfig.json
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\SkeletonSite.Tests.runtimeconfig.dev.json
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\SkeletonSite.Tests.dll
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\SkeletonSite.Tests.pdb
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\SkeletonSite.dll
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\bin\Debug\netcoreapp2.2\SkeletonSite.pdb
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.AssemblyInfo.cs
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.csproj.CopyComplete
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.dll
+C:\Users\Student\Desktop\CS296N-Labs\SkeletonSite.Tests\obj\Debug\netcoreapp2.2\SkeletonSite.Tests.pdb
