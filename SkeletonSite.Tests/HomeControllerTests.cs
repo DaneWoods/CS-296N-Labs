@@ -16,7 +16,7 @@ namespace SkeletonSite.Tests
             // Arrange
             var repo = new FakeStoriesRepository();
             var homeController = new HomeController(repo);
-            repo.AddInitialStories();
+            repo.AddInitialData();
             // Act
             homeController.StoryBoard();
             // Assert
@@ -45,11 +45,26 @@ namespace SkeletonSite.Tests
             var repo = new FakeStoriesRepository();
             var homeController = new HomeController(repo);
             Story sortedStory = new Story();
-            repo.AddInitialStories();
+            repo.AddInitialData();
             // Act
             sortedStory = repo.Retrieve(repo.Stories[0].Title);
             // Assert
             Assert.Equal("King of Apples", sortedStory.Title);
+        }
+
+        [Fact]
+        public void UserCreateTest()
+        {
+            // Arrange
+            var repo = new FakeStoriesRepository();
+            var homeController = new HomeController(repo);
+            User use = new User();
+            use.UserName = "King of Apples";
+            use.Email = "abcdef@wowie.com";
+            // Act
+            homeController.UserCreate(use);
+            // Assert
+            Assert.Equal(use, repo.Users[repo.Users.Count - 1]);
         }
 
         [Fact]
@@ -60,15 +75,15 @@ namespace SkeletonSite.Tests
             var homeController = new HomeController(repo);
             string com = "Great story.";
             string title = "King of Grapes";
-            repo.AddInitialStories();
+            repo.AddInitialData();
             Story tstory = repo.Retrieve(title);
             Comment tcom = new Comment();
             tcom.Text = com;
             // Act
-            homeController.Comment(com, title);
+            homeController.Comment(tcom, title);
             // Assert
             Assert.Equal(1, repo.Retrieve(title).Subjects.Count);
-            Assert.Equal(tcom.Text, tstory.Subjects[0].Text);
+            Assert.Equal(tcom, tstory.Subjects[0]);
         }
     }
 }

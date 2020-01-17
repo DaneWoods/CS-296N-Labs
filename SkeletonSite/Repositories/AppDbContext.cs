@@ -18,5 +18,6 @@ namespace SkeletonSite.Repositories
         public DbSet<Comment> Comments { get; set; }
         //public DbSet<Link> Links { get; set; }
         public DbSet<Story> Stories { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

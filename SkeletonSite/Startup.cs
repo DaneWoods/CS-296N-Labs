@@ -40,7 +40,7 @@ namespace SkeletonSite
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             // Inject our repositories into our controllers
-            services.AddTransient<IRepository, StoriesRepository>();
+            services.AddTransient<IRepository, RealRepository>();
 
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(
